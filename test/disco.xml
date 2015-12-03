@@ -1,0 +1,6 @@
+<!-- Should contain urn:xmpp:ping -->
+<iq type='get'
+    to='localhost'
+    id='disco1'>
+  <query xmlns='http://jabber.org/protocol/disco#info'/>
+</iq>

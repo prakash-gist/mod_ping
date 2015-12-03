@@ -1,0 +1,24 @@
+<doc>
+
+  <!-- Should return an empty result. -->
+  <iq type='get'
+      to='localhost'
+      id='ping1' >
+    <ping xmlns='urn:xmpp:ping'/>
+  </iq>
+
+  <!-- Should return <feature-not-implemented/> -->
+  <iq type='set'
+      to='localhost'
+      id='ping1' >
+    <ping xmlns='urn:xmpp:ping'/>
+  </iq>
+
+  <!-- Should return <feature-not-implemented/> -->
+  <iq type='get'
+      to='localhost'
+      id='ping1' >
+    <foo xmlns='urn:xmpp:ping'/>
+  </iq>
+
+</doc>
